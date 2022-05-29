@@ -1,0 +1,451 @@
+local scriptgui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local NameHub = Instance.new("TextLabel")
+local Teleport = Instance.new("TextButton")
+local Esp = Instance.new("TextButton")
+local Players = Instance.new("TextButton")
+local Teleport1 = Instance.new("Frame")
+local Start = Instance.new("TextButton")
+local Soldier = Instance.new("TextButton")
+local ChefShip = Instance.new("TextButton")
+local DesertIsland = Instance.new("TextButton")
+local SharkIsland = Instance.new("TextButton")
+local PirateIsland = Instance.new("TextButton")
+local WarIsland = Instance.new("TextButton")
+local BubbleIsland = Instance.new("TextButton")
+local LobbyIsland = Instance.new("TextButton")
+local ZombieIsland = Instance.new("TextButton")
+local FishLand = Instance.new("TextButton")
+local Esp1 = Instance.new("Frame")
+local Open = Instance.new("TextButton")
+local Frame2 = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+scriptgui.Name = "scriptgui"
+scriptgui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+scriptgui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = scriptgui
+Frame.BackgroundColor3 = Color3.fromRGB(170, 85, 255)
+Frame.BorderColor3 = Color3.fromRGB(170, 85, 255)
+Frame.Position = UDim2.new(0.308521926, 0, 0.129436329, 0)
+Frame.Size = UDim2.new(0, 489, 0, 300)
+
+NameHub.Name = "NameHub"
+NameHub.Parent = Frame
+NameHub.BackgroundColor3 = Color3.fromRGB(170, 85, 255)
+NameHub.BorderColor3 = Color3.fromRGB(170, 85, 255)
+NameHub.Size = UDim2.new(0, 88, 0, 32)
+NameHub.Font = Enum.Font.SourceSans
+NameHub.Text = "himEhub"
+NameHub.TextColor3 = Color3.fromRGB(0, 0, 0)
+NameHub.TextSize = 21.000
+NameHub.TextStrokeColor3 = Color3.fromRGB(255, 255, 255)
+
+Teleport.Name = "Teleport"
+Teleport.Parent = Frame
+Teleport.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Teleport.BorderColor3 = Color3.fromRGB(170, 0, 255)
+Teleport.Position = UDim2.new(0.0143149281, 0, 0.143333331, 0)
+Teleport.Size = UDim2.new(0, 114, 0, 33)
+Teleport.Font = Enum.Font.SourceSans
+Teleport.Text = "Teleport"
+Teleport.TextColor3 = Color3.fromRGB(0, 0, 0)
+Teleport.TextSize = 20.000
+
+Esp.Name = "Esp"
+Esp.Parent = Frame
+Esp.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Esp.BorderColor3 = Color3.fromRGB(170, 0, 255)
+Esp.Position = UDim2.new(0.0143149281, 0, 0.276666671, 0)
+Esp.Size = UDim2.new(0, 114, 0, 33)
+Esp.Font = Enum.Font.SourceSans
+Esp.Text = "Esp"
+Esp.TextColor3 = Color3.fromRGB(0, 0, 0)
+Esp.TextSize = 20.000
+
+Players.Name = "Players"
+Players.Parent = Frame
+Players.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Players.BorderColor3 = Color3.fromRGB(170, 0, 255)
+Players.Position = UDim2.new(0.0143149281, 0, 0.406666666, 0)
+Players.Size = UDim2.new(0, 114, 0, 33)
+Players.Font = Enum.Font.SourceSans
+Players.Text = "Players"
+Players.TextColor3 = Color3.fromRGB(0, 0, 0)
+Players.TextSize = 20.000
+
+Teleport1.Name = "Teleport1"
+Teleport1.Parent = Frame
+Teleport1.BackgroundColor3 = Color3.fromRGB(255, 85, 255)
+Teleport1.BackgroundTransparency = 0.300
+Teleport1.BorderColor3 = Color3.fromRGB(255, 85, 255)
+Teleport1.Position = UDim2.new(0.298568517, 0, 0.0533333346, 0)
+Teleport1.Size = UDim2.new(0, 328, 0, 269)
+Teleport1.Visible = false
+
+Start.Name = "Start"
+Start.Parent = Teleport1
+Start.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Start.BorderColor3 = Color3.fromRGB(170, 0, 255)
+Start.Position = UDim2.new(0.024390243, 0, 0.0371747203, 0)
+Start.Size = UDim2.new(0, 102, 0, 32)
+Start.Font = Enum.Font.SourceSans
+Start.Text = "Start"
+Start.TextColor3 = Color3.fromRGB(0, 0, 0)
+Start.TextSize = 19.000
+
+Soldier.Name = "Soldier"
+Soldier.Parent = Teleport1
+Soldier.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Soldier.BorderColor3 = Color3.fromRGB(170, 0, 255)
+Soldier.Position = UDim2.new(0.024390243, 0, 0.193308547, 0)
+Soldier.Size = UDim2.new(0, 102, 0, 32)
+Soldier.Font = Enum.Font.SourceSans
+Soldier.Text = "Solodier"
+Soldier.TextColor3 = Color3.fromRGB(0, 0, 0)
+Soldier.TextSize = 19.000
+
+ChefShip.Name = "ChefShip"
+ChefShip.Parent = Teleport1
+ChefShip.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+ChefShip.BorderColor3 = Color3.fromRGB(170, 0, 255)
+ChefShip.Position = UDim2.new(0.024390243, 0, 0.342007428, 0)
+ChefShip.Size = UDim2.new(0, 102, 0, 32)
+ChefShip.Font = Enum.Font.SourceSans
+ChefShip.Text = "Chef Ship"
+ChefShip.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChefShip.TextSize = 19.000
+
+DesertIsland.Name = "DesertIsland"
+DesertIsland.Parent = Teleport1
+DesertIsland.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+DesertIsland.BorderColor3 = Color3.fromRGB(170, 0, 255)
+DesertIsland.Position = UDim2.new(0.024390243, 0, 0.486988842, 0)
+DesertIsland.Size = UDim2.new(0, 102, 0, 32)
+DesertIsland.Font = Enum.Font.SourceSans
+DesertIsland.Text = "Desert Island"
+DesertIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+DesertIsland.TextSize = 19.000
+
+SharkIsland.Name = "SharkIsland"
+SharkIsland.Parent = Teleport1
+SharkIsland.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+SharkIsland.BorderColor3 = Color3.fromRGB(170, 0, 255)
+SharkIsland.Position = UDim2.new(0.024390243, 0, 0.643122673, 0)
+SharkIsland.Size = UDim2.new(0, 102, 0, 32)
+SharkIsland.Font = Enum.Font.SourceSans
+SharkIsland.Text = "Shark Island"
+SharkIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+SharkIsland.TextSize = 19.000
+
+PirateIsland.Name = "PirateIsland"
+PirateIsland.Parent = Teleport1
+PirateIsland.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+PirateIsland.BorderColor3 = Color3.fromRGB(170, 0, 255)
+PirateIsland.Position = UDim2.new(0.024390243, 0, 0.795539021, 0)
+PirateIsland.Size = UDim2.new(0, 102, 0, 32)
+PirateIsland.Font = Enum.Font.SourceSans
+PirateIsland.Text = "Pirate Island"
+PirateIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+PirateIsland.TextSize = 19.000
+
+WarIsland.Name = "WarIsland"
+WarIsland.Parent = Teleport1
+WarIsland.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+WarIsland.BorderColor3 = Color3.fromRGB(170, 0, 255)
+WarIsland.Position = UDim2.new(0.38719514, 0, 0.0371747017, 0)
+WarIsland.Size = UDim2.new(0, 102, 0, 32)
+WarIsland.Font = Enum.Font.SourceSans
+WarIsland.Text = "War Island"
+WarIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+WarIsland.TextSize = 19.000
+
+BubbleIsland.Name = "BubbleIsland"
+BubbleIsland.Parent = Teleport1
+BubbleIsland.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+BubbleIsland.BorderColor3 = Color3.fromRGB(170, 0, 255)
+BubbleIsland.Position = UDim2.new(0.38719514, 0, 0.193308532, 0)
+BubbleIsland.Size = UDim2.new(0, 102, 0, 32)
+BubbleIsland.Font = Enum.Font.SourceSans
+BubbleIsland.Text = "Bubble  Island"
+BubbleIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+BubbleIsland.TextScaled = true
+BubbleIsland.TextSize = 19.000
+BubbleIsland.TextWrapped = true
+
+LobbyIsland.Name = "LobbyIsland"
+LobbyIsland.Parent = Teleport1
+LobbyIsland.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+LobbyIsland.BorderColor3 = Color3.fromRGB(170, 0, 255)
+LobbyIsland.Position = UDim2.new(0.38719514, 0, 0.342007399, 0)
+LobbyIsland.Size = UDim2.new(0, 102, 0, 32)
+LobbyIsland.Font = Enum.Font.SourceSans
+LobbyIsland.Text = "Lobby  Island"
+LobbyIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+LobbyIsland.TextScaled = true
+LobbyIsland.TextSize = 19.000
+LobbyIsland.TextWrapped = true
+
+ZombieIsland.Name = "ZombieIsland"
+ZombieIsland.Parent = Teleport1
+ZombieIsland.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+ZombieIsland.BorderColor3 = Color3.fromRGB(170, 0, 255)
+ZombieIsland.Position = UDim2.new(0.38719514, 0, 0.486988813, 0)
+ZombieIsland.Size = UDim2.new(0, 102, 0, 32)
+ZombieIsland.Font = Enum.Font.SourceSans
+ZombieIsland.Text = "Zombie  Island"
+ZombieIsland.TextColor3 = Color3.fromRGB(0, 0, 0)
+ZombieIsland.TextScaled = true
+ZombieIsland.TextSize = 19.000
+ZombieIsland.TextWrapped = true
+
+FishLand.Name = "FishLand"
+FishLand.Parent = Teleport1
+FishLand.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+FishLand.BorderColor3 = Color3.fromRGB(170, 0, 255)
+FishLand.Position = UDim2.new(0.38719514, 0, 0.643122673, 0)
+FishLand.Size = UDim2.new(0, 102, 0, 32)
+FishLand.Font = Enum.Font.SourceSans
+FishLand.Text = "Fish Land"
+FishLand.TextColor3 = Color3.fromRGB(0, 0, 0)
+FishLand.TextScaled = true
+FishLand.TextSize = 20.000
+FishLand.TextWrapped = true
+
+Esp1.Name = "Esp1"
+Esp1.Parent = Frame
+Esp1.BackgroundColor3 = Color3.fromRGB(255, 85, 255)
+Esp1.BackgroundTransparency = 0.300
+Esp1.BorderColor3 = Color3.fromRGB(255, 85, 255)
+Esp1.Position = UDim2.new(0.298568517, 0, 0.0533333346, 0)
+Esp1.Size = UDim2.new(0, 328, 0, 269)
+Esp1.Visible = false
+
+Open.Name = "Open"
+Open.Parent = Esp1
+Open.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+Open.BorderColor3 = Color3.fromRGB(170, 0, 255)
+Open.Position = UDim2.new(0.024390243, 0, 0.0334572494, 0)
+Open.Size = UDim2.new(0, 141, 0, 43)
+Open.Font = Enum.Font.SourceSans
+Open.Text = "Open Esp"
+Open.TextColor3 = Color3.fromRGB(0, 0, 0)
+Open.TextSize = 24.000
+
+Frame2.Name = "Frame2"
+Frame2.Parent = scriptgui
+Frame2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame2.BackgroundTransparency = 1.000
+Frame2.Position = UDim2.new(0.307917893, 0, 0.755741119, 0)
+Frame2.Size = UDim2.new(0, 100, 0, 0)
+
+TextButton.Parent = Frame2
+TextButton.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+TextButton.Position = UDim2.new(0, 0, 0.996954978, 0)
+TextButton.Size = UDim2.new(0, 489, 0, 24)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = ""
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+
+-- Scripts:
+
+local function DIYS_fake_script() -- Teleport.LocalScript 
+	local script = Instance.new('LocalScript', Teleport)
+
+	local frame = script.Parent.Parent:WaitForChild("Teleport1")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+	
+			frame.Visible = true
+		elseif frame.Visible == true then
+			frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(DIYS_fake_script)()
+local function CVYOWN_fake_script() -- Esp.LocalScript 
+	local script = Instance.new('LocalScript', Esp)
+
+	local frame = script.Parent.Parent:WaitForChild("Esp1")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+	
+			frame.Visible = true
+		elseif frame.Visible == true then
+			frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(CVYOWN_fake_script)()
+local function ZEQNED_fake_script() -- Players.LocalScript 
+	local script = Instance.new('LocalScript', Players)
+
+	local frame = script.Parent.Parent:WaitForChild("Players1")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+	
+			frame.Visible = true
+		elseif frame.Visible == true then
+			frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(ZEQNED_fake_script)()
+local function SRLF_fake_script() -- Start.LocalScript 
+	local script = Instance.new('LocalScript', Start)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2127.3186, 50.3857689, -1625.99023, 0.996248841, 2.00473185e-08, 0.086534448, -2.55858819e-08, 1, 6.28950119e-08, -0.086534448, -6.48731486e-08, 0.996248841)
+	end)
+	
+end
+coroutine.wrap(SRLF_fake_script)()
+local function DMDF_fake_script() -- Soldier.LocalScript 
+	local script = Instance.new('LocalScript', Soldier)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1734.49255, 68.6785278, 219.370605, 0.996875942, 2.31003252e-08, 0.0789834186, -1.93387208e-08, 1, -4.83901701e-08, -0.0789834186, 4.67115555e-08, 0.996875942)
+	end)
+	
+end
+coroutine.wrap(DMDF_fake_script)()
+local function ZLYGJK_fake_script() -- ChefShip.LocalScript 
+	local script = Instance.new('LocalScript', ChefShip)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(228.961319, 12.9391861, -268.66983, -0.204890758, 3.69332156e-08, 0.978784859, -2.65452726e-08, 1, -4.32905125e-08, -0.978784859, -3.48519364e-08, -0.204890758)
+	end)
+	
+end
+coroutine.wrap(ZLYGJK_fake_script)()
+local function IXYQ_fake_script() -- DesertIsland.LocalScript 
+	local script = Instance.new('LocalScript', DesertIsland)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1406.27734, 12.8860664, 2111.0127, -0.570485294, 7.00725167e-08, 0.821307838, 1.05965647e-07, 1, -1.17138432e-08, -0.821307838, 8.03478386e-08, -0.570485294)
+	end)
+	
+end
+coroutine.wrap(IXYQ_fake_script)()
+local function AOUEYC_fake_script() -- SharkIsland.LocalScript 
+	local script = Instance.new('LocalScript', SharkIsland)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3542.72925, 10.5419436, 1523.06372, -0.478220373, 3.30574501e-08, -0.87823987, -2.21626806e-08, 1, 4.97086212e-08, 0.87823987, 4.32358256e-08, -0.478220373)
+	end)
+	
+end
+coroutine.wrap(AOUEYC_fake_script)()
+local function JBHUHFW_fake_script() -- PirateIsland.LocalScript 
+	local script = Instance.new('LocalScript', PirateIsland)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3705.95923, 37.8592987, -666.02356, 0.964869857, -7.8176301e-09, 0.262728333, 6.62401334e-09, 1, 5.42887468e-09, -0.262728333, -3.49784135e-09, 0.964869857)
+	end)
+	
+end
+coroutine.wrap(JBHUHFW_fake_script)()
+local function KCGDV_fake_script() -- WarIsland.LocalScript 
+	local script = Instance.new('LocalScript', WarIsland)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(6555.08789, 49.5760727, 820.174255, -0.94269973, 2.04271586e-08, 0.333642393, -2.10858175e-09, 1, -6.71824623e-08, -0.333642393, -6.40363993e-08, -0.94269973)
+	end)
+	
+end
+coroutine.wrap(KCGDV_fake_script)()
+local function ROQHQWC_fake_script() -- BubbleIsland.LocalScript 
+	local script = Instance.new('LocalScript', BubbleIsland)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5946.78076, 12.2159204, 3577.53442, -0.0636029467, 3.68281872e-09, -0.99797529, 2.48438337e-09, 1, 3.53195584e-09, 0.99797529, -2.25471042e-09, -0.0636029467)
+	end)
+	
+end
+coroutine.wrap(ROQHQWC_fake_script)()
+local function JIOY_fake_script() -- LobbyIsland.LocalScript 
+	local script = Instance.new('LocalScript', LobbyIsland)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2990.07886, 13.0906649, 5146.55273, 0.585668206, 7.0467415e-08, -0.810550869, 5.64046054e-09, 1, 9.10132272e-08, 0.810550869, -5.7875436e-08, 0.585668206)
+	end)
+	
+end
+coroutine.wrap(JIOY_fake_script)()
+local function EZYU_fake_script() -- ZombieIsland.LocalScript 
+	local script = Instance.new('LocalScript', ZombieIsland)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1486.71179, 15.7512283, 7003.22803, -0.901450992, -2.59785549e-09, 0.432881147, -7.46626511e-11, 1, 5.84583271e-09, -0.432881147, 5.23741184e-09, -0.901450992)
+	end)
+	
+end
+coroutine.wrap(EZYU_fake_script)()
+local function WMEANR_fake_script() -- FishLand.LocalScript 
+	local script = Instance.new('LocalScript', FishLand)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2374.94702, 40.2482605, 9236.98828, -0.949535251, -4.51066118e-09, -0.313660324, 2.75568279e-09, 1, -2.2722924e-08, 0.313660324, -2.2440565e-08, -0.949535251)
+	end)
+	
+end
+coroutine.wrap(WMEANR_fake_script)()
+local function XSKKLI_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		while wait() do
+			pcall(function()
+				for i,v in pairs(game.Players:GetChildren()) do
+					if not v.Character.Head:FindFirstChild("ESP") then
+						local BillboardGui = Instance.new("BillboardGui")
+						local TextLabel = Instance.new("TextLabel")
+						BillboardGui.Parent = v.Character.Head
+						BillboardGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+						BillboardGui.Active = true
+						BillboardGui.Name = "ESP"
+						BillboardGui.AlwaysOnTop = true
+						BillboardGui.LightInfluence = 1.000
+						BillboardGui.Size = UDim2.new(0, 200, 0, 50)
+						BillboardGui.StudsOffset = Vector3.new(0, 2.5, 0)
+						TextLabel.Parent = BillboardGui
+						TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						TextLabel.BackgroundTransparency = 1.000
+						TextLabel.Size = UDim2.new(0, 200, 0, 50)
+						TextLabel.Font = Enum.Font.GothamBold
+						TextLabel.Text = v.Name
+						TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+						TextLabel.TextScaled = true
+						TextLabel.TextSize = 14.000
+						TextLabel.TextStrokeTransparency = 0.000
+						TextLabel.TextWrapped = true
+					end
+				end
+			end) 
+		end
+	end)
+	
+end
+coroutine.wrap(XSKKLI_fake_script)()
+local function OLUXNXT_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local frame = script.Parent.Parent.Parent:WaitForChild("Frame")
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if frame.Visible == false then
+	
+			frame.Visible = true
+		elseif frame.Visible == true then
+			frame.Visible = false
+		end
+	end)
+end
+coroutine.wrap(OLUXNXT_fake_script)()
